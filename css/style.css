@@ -95,6 +95,12 @@ img {
 .navigation-list-link:focus {
   color: var(--address-hover-focus);
 }
+.mail-list-icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
 .mail-link {
   margin-left: auto;
   margin-right: 50px;
@@ -106,6 +112,16 @@ img {
 .mail-link:focus {
   color: var(--address-hover-focus);
 }
+.mail-link:hover .mail-list-icon,
+.mail-link:focus .mail-list-icon {
+  fill: var(--address-hover-focus);
+}
+.tel-list-icon {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+}
 .tel-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -114,6 +130,10 @@ img {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--address-hover-focus);
+}
+.tel-link:hover .tel-list-icon,
+.tel-link:focus .tel-list-icon {
+  fill: var(--address-hover-focus);
 }
 /*====== END HEADER ======*/
 
@@ -199,6 +219,23 @@ img {
 .description:not(:last-child) {
   margin-right: 30px;
 }
+.description-list {
+  display: flex;
+}
+.description-list-link {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.description-list-icon {
+  width: 70px;
+  height: 70px;
+}
 .title-benefits {
   font-weight: 700;
   font-size: 14px;
@@ -277,7 +314,7 @@ img {
   margin: -15px;
 }
 .name-list {
-  padding: 30px 58px;
+  padding: 30px 32px;
 }
 .specialists {
   font-weight: 500;
@@ -295,9 +332,84 @@ img {
   letter-spacing: 0.03em;
   color: var(--prof-desc);
   margin-top: 5px;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: center;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #2196f3;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-icon:focus .social-list-icon {
+  fill: #ffffff;
 }
 /*====== END TEAM ======*/
 
+/*====== CLIENT ======*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.client {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-list-link {
+  width: 170px;
+  height: 90px;
+  background-color: #fffb00;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: #2196f3;
+}
+.client-list-icon {
+  fill: #afb1b8;
+}
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: #2196f3;
+}
 /*====== FOOTER ======*/
 .container {
   width: 1200px;
