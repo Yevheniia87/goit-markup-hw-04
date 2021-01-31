@@ -236,6 +236,9 @@ img {
   padding-bottom: 60px;
   background: var(--dark-topic);
 }
+.footer-container {
+  display: flex;
+}
 .logo-footer-item {
   display: block;
 }
@@ -275,10 +278,12 @@ img {
 .contacts-list-link:focus {
   color: var(--btn);
 }
-.footer-social {
+.footer-social-block {
   display: block;
+  margin-left: 70px;
 }
-.footer-social-item {
+.footer-social-title {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
