@@ -155,10 +155,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-.hero-container.container {
-  display: flex;
-  width: 696px;
-}
+
 .hero-container {
   display: inline-flex;
   width: 1600px;
