@@ -67,12 +67,10 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   width: 145px;
+  margin-right: 93px;
 }
 .logo-img {
   color: var(--logo-nav-header);
-}
-.logotype {
-  margin-right: 93px;
 }
 .navigation {
   display: flex;
@@ -89,6 +87,10 @@ img {
   margin-right: 50px;
 }
 .navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
   color: var(--logo-nav-header);
 }
 .navigation-list-link:hover,
@@ -102,6 +104,10 @@ img {
   margin-right: 10px;
 }
 .mail-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: 50px;
   padding-top: 32px;
@@ -123,6 +129,10 @@ img {
   margin-right: 10px;
 }
 .tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
@@ -151,8 +161,8 @@ img {
 }
 .hero-container {
   display: inline-flex;
-  width: 100%;
-  height: 100%;
+  width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -217,6 +227,7 @@ img {
 }
 .benefits {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .options {
   padding-bottom: 94px;
@@ -274,7 +285,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-spec);
-  margin-top: 47px;
   margin-bottom: 50px;
 }
 .images-container {
