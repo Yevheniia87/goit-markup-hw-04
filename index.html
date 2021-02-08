@@ -23,7 +23,7 @@
                 </a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item">
-                        <a class="navigation-list-link link" href="./index.html">Студия</a>
+                        <a class="navigation-list-link link" href="./index.html"><span class="studia">Студия</span></a>
                     </li>
                     <li class="navigation-list-item">
                         <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
@@ -57,7 +57,7 @@
                     <h1 class="headline">Эффективные решения для вашего бизнеса</h1>
                 </div>
                 <div class="modal-button-block">
-                    <button class="modal-button" type="button">Заказать услугу</button>
+                    <button class="modal-button" type="button" data-modal-open>Заказать услугу</button>
                 </div> 
             </div> 
         </section>
@@ -132,13 +132,22 @@
                 <h2 class="options-title">Чем мы занимаемся</h2>
                 <ul class="images-container list">
                     <li class="images">
-                        <img class="foto-task" src="./img/our_deals/img1.png" alt="верстает код" width="370px">
+                        <div class="position-item">
+                            <img class="foto-task" src="./img/our_deals/img1.png" alt="верстает код" width="370px">
+                            <p class="text-position">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="images">
-                        <img class="foto-task" src="./img/our_deals/img2.png" alt="разрабатывает дизайн" width="370px">
+                        <div class="position-item">
+                            <img class="foto-task" src="./img/our_deals/img2.png" alt="разрабатывает дизайн" width="370px">
+                            <p class="text-position">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="images">
-                        <img class="foto-task" src="./img/our_deals/img3.png" alt="подберает соотношение цветов" width="370px">
+                        <div class="position-item">
+                            <img class="foto-task" src="./img/our_deals/img3.png" alt="подберает цветовую гамму" width="370px">
+                            <p class="text-position">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -414,10 +423,18 @@
                     </ul>
                 </div>
             </div>
-            
-    
         </div>
     </footer>
 
+<div class="backdrop" data-modal>
+    <div class="modal-button">
+        <button type="button" class="modal-btn-close" data-modal-close>
+            <svg class="modal-btn-close-icon" width="11" height="11">
+                <use href="./sprite."></use>
+            </svg>
+        </button>
+    </div>
+</div>
+    <script src="./js/modal.js"></script>
 </body>
-
+</html>

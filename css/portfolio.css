@@ -11,6 +11,7 @@
   --back-btn: #f5f4fa;
   --text: #757575;
   --address-hover-focus: #2196f3;
+  --color-item-page: #2196f3;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -93,10 +94,15 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--logo-nav-header);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--btn);
+}
+.portfolio {
+  color: var(--color-item-page);
 }
 .mail-list-icon {
   width: 16px;
@@ -115,6 +121,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -139,6 +147,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -191,6 +201,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-list-link:hover,
 .btn-list-link:focus {
@@ -225,8 +238,32 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.overlay-block {
+  position: relative;
+  overflow: hidden;
+}
 .foto-gallery {
   width: 370px;
+}
+.overlay {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  padding: 64px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-list-link:hover .overlay,
+.gallery-list-link:focus .overlay {
+  transform: translateY(0);
 }
 .gallery-desc {
   padding: 20px 24px;
@@ -236,6 +273,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 .description {
   font-weight: 500;
@@ -294,6 +332,8 @@ img {
 }
 .contacts-list-link {
   color: var(--main-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_list {
   color: rgba(255, 255, 255, 0.6);
@@ -327,6 +367,8 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-icon {
   width: 20px;
